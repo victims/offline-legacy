@@ -26,6 +26,6 @@ class redirectHandler(http.server.SimpleHTTPRequestHandler):
 
 # Server from the server directory as it has the required files
 os.chdir('server')
-with socketserver.TCPServer(("", PORT), redirectHandler) as httpd:
+with socketserver.ThreadingTCPServer(("", PORT), redirectHandler) as httpd:
     print("serving at port", PORT)
     httpd.serve_forever()
