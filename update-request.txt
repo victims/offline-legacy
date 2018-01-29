@@ -1,0 +1,6 @@
+GET /service/v2/update/1970-01-01T00:00:00/ HTTP/1.1
+User-Agent: Java/1.8.0_151
+Host: www.victi.ms
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+Proxy-Connection: keep-alive
+
